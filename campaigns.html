@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>All Campaigns – HopeFund</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="campaign.css">
+</head>
+<body>
+
+<!-- ============ LOADER ============ -->
+<div id="loader">
+  <div class="loader-spinner"></div>
+  <div class="loader-text">HopeFund</div>
+</div>
+
+<!-- ============ NAVBAR ============ -->
+<nav class="navbar" id="navbar">
+  <div class="nav-container">
+    <a href="index.html" class="logo">
+      <i class="fa-solid fa-hand-holding-heart"></i>
+      HopeFund
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="campaigns.html" class="active">Campaigns</a></li>
+      <li><a href="history.html">History</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="donate.html" class="nav-cta"><i class="fa-solid fa-heart"></i> Donate Now</a></li>
+    </ul>
+    <button class="menu-toggle" id="menuToggle" aria-label="Menu"><i class="fa-solid fa-bars"></i></button>
+  </div>
+</nav>
+
+<!-- ============ CAMPAIGNS PAGE ============ -->
+<main class="page" id="page-campaigns">
+  <section class="page-header">
+    <div class="container">
+      <div class="breadcrumb"><a href="index.html">Home</a> <i class="fa-solid fa-chevron-right" style="font-size:10px"></i> <span>Campaigns</span></div>
+      <h1>All Campaigns</h1>
+      <p>Explore active campaigns and see the real-time progress of each cause.</p>
+    </div>
+  </section>
+
+  <section class="block" style="padding-top: 40px;">
+    <div class="container">
+      <div class="campaigns-grid" id="allCampaigns"></div>
+    </div>
+  </section>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          <i class="fa-solid fa-hand-holding-heart"></i> HopeFund
+        </a>
+        <p>Empowering communities through transparent giving. Together, we build a world where no one is left behind.</p>
+        <div class="footer-social">
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>Quick Links</h5>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="campaigns.html">Campaigns</a></li>
+          <li><a href="donate.html">Donate</a></li>
+          <li><a href="history.html">History</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Campaigns</h5>
+        <ul>
+          <li><a href="campaigns.html">Education Fund</a></li>
+          <li><a href="campaigns.html">Medical Emergency</a></li>
+          <li><a href="campaigns.html">Flood Relief</a></li>
+          <li><a href="campaigns.html">Winter Aid</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Newsletter</h5>
+        <p style="font-size:14px; color:#94a3b8;">Subscribe to receive updates about our impact.</p>
+        <form class="newsletter">
+          <input type="email" placeholder="Your email" required />
+          <button type="submit"><i class="fa-solid fa-paper-plane"></i></button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2026 <span>HopeFund</span>. All rights reserved. Built with ❤ for humanity.
+    </div>
+  </div>
+</footer>
+
+<!-- ============ SCROLL TO TOP ============ -->
+<button id="toTop" aria-label="Scroll to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+<!-- ============ TOAST ============ -->
+<div class="toast" id="toast"><i class="fa-solid fa-circle-check"></i><span id="toastMsg">Done!</span></div>
+
+<script src="storage.js"></script>
+<script src="app.js"></script>
+<script src="campaign.js"></script>
+</body>
+</html>
