@@ -1,0 +1,51 @@
+/* ============================================
+   Donate Page
+   ============================================ */
+.donate-wrap {
+  display: grid; grid-template-columns: 1.4fr 1fr; gap: 40px; padding-bottom: 80px;
+}
+.donate-form-card, .donate-summary {
+  background: rgba(255,255,255,0.7);
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(255,255,255,0.6);
+  padding: 34px; border-radius: var(--radius-lg); box-shadow: var(--shadow-md);
+}
+.donate-form-card h3 { margin-bottom: 4px; }
+.donate-form-card > p { color: var(--gray-500); margin-bottom: 24px; font-size: 14px; }
+
+.amount-quick { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+.amount-chip {
+  padding: 8px 14px; border: 2px solid var(--gray-100); border-radius: 999px;
+  font-size: 13px; font-weight: 600; color: var(--gray-700); transition: var(--transition);
+}
+.amount-chip:hover, .amount-chip.active {
+  background: var(--green-50); color: var(--green-700); border-color: var(--green-500);
+}
+
+.pay-methods { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+.pay-option {
+  cursor: pointer; padding: 14px; border: 2px solid var(--gray-100);
+  border-radius: 12px; text-align: center; transition: var(--transition);
+  background: #fff;
+}
+.pay-option input { display: none; }
+.pay-option:hover { border-color: var(--green-400); }
+.pay-option.selected { border-color: var(--green-500); background: var(--green-50); }
+.pay-option i { font-size: 22px; color: var(--green-700); margin-bottom: 6px; display: block; }
+.pay-option span { font-size: 13px; font-weight: 600; display: block; }
+
+.donate-summary h4 { margin-bottom: 16px; }
+.summary-item {
+  display: flex; justify-content: space-between; padding: 12px 0;
+  border-bottom: 1px dashed var(--gray-100); font-size: 14px;
+}
+.summary-item:last-of-type { border-bottom: none; }
+.summary-item strong { color: var(--green-700); }
+.trust-list { list-style: none; margin-top: 20px; }
+.trust-list li { padding: 8px 0; font-size: 14px; color: var(--gray-700); display: flex; align-items: center; gap: 10px; }
+.trust-list i { color: var(--green-600); }
+
+@media (max-width: 900px) {
+  .donate-wrap { grid-template-columns: 1fr; }
+  .pay-methods { grid-template-columns: 1fr; }
+}
