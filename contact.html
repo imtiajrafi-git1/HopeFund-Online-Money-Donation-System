@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Contact Us – HopeFund</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="contact.css">
+</head>
+<body>
+
+<!-- ============ LOADER ============ -->
+<div id="loader">
+  <div class="loader-spinner"></div>
+  <div class="loader-text">HopeFund</div>
+</div>
+
+<!-- ============ NAVBAR ============ -->
+<nav class="navbar" id="navbar">
+  <div class="nav-container">
+    <a href="index.html" class="logo">
+      <i class="fa-solid fa-hand-holding-heart"></i>
+      HopeFund
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="campaigns.html">Campaigns</a></li>
+      <li><a href="history.html">History</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+      <li><a href="donate.html" class="nav-cta"><i class="fa-solid fa-heart"></i> Donate Now</a></li>
+    </ul>
+    <button class="menu-toggle" id="menuToggle" aria-label="Menu"><i class="fa-solid fa-bars"></i></button>
+  </div>
+</nav>
+
+<!-- ============ CONTACT PAGE ============ -->
+<main class="page" id="page-contact">
+  <section class="page-header">
+    <div class="container">
+      <div class="breadcrumb"><a href="index.html">Home</a> <i class="fa-solid fa-chevron-right" style="font-size:10px"></i> <span>Contact</span></div>
+      <h1>Get in Touch</h1>
+      <p>We'd love to hear from you. Reach out for partnerships, questions, or feedback.</p>
+    </div>
+  </section>
+
+  <section class="block" style="padding-top: 30px;">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info-card">
+          <h3>Contact Information</h3>
+          <p>Fill out the form or contact us directly using the info below.</p>
+
+          <div class="contact-info-item">
+            <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div><h5>Address</h5><p> Mirpur, Gulshan-1<br>Dhaka 1212, Bangladesh</p></div>
+          </div>
+          <div class="contact-info-item">
+            <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+            <div><h5>Email</h5><p>hello@hopefund.org<br>support@hopefund.org</p></div>
+          </div>
+          <div class="contact-info-item">
+            <div class="icon"><i class="fa-solid fa-phone"></i></div>
+            <div><h5>Phone</h5><p>+880 1622957646<br>+880 2-9999999</p></div>
+          </div>
+          <div class="contact-info-item">
+            <div class="icon"><i class="fa-solid fa-clock"></i></div>
+            <div><h5>Working Hours</h5><p> – Thu: 9:00 AM – 6:00 PM</p></div>
+          </div>
+
+          <div class="contact-social">
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="contact-form-card">
+          <h3>Send us a Message</h3>
+          <p style="color:var(--gray-500); font-size:14px; margin-bottom:24px;">We usually reply within 24 hours.</p>
+          <form id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="cName">Your Name *</label>
+                <input type="text" id="cName" placeholder="Imtiaj Rafi" />
+                <span class="err">Name is required</span>
+              </div>
+              <div class="form-group">
+                <label for="cEmail">Email *</label>
+                <input type="email" id="cEmail" placeholder="imtiaj@example.com" />
+                <span class="err">Valid email is required</span>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="cSubject">Subject *</label>
+              <input type="text" id="cSubject" placeholder="How can we help?" />
+              <span class="err">Subject is required</span>
+            </div>
+            <div class="form-group">
+              <label for="cMessage">Message *</label>
+              <textarea id="cMessage" rows="6" placeholder="Write your message..."></textarea>
+              <span class="err">Message is required</span>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center;">
+              <i class="fa-solid fa-paper-plane"></i> Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <div class="map-wrap">
+        <iframe
+          src="https://www.openstreetmap.org/export/embed.html?bbox=90.4066%2C23.7806%2C90.4266%2C23.7906&layer=mapnik&marker=23.7856%2C90.4166"
+          loading="lazy" title="HopeFund Location"></iframe>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          <i class="fa-solid fa-hand-holding-heart"></i> HopeFund
+        </a>
+        <p>Empowering communities through transparent giving. Together, we build a world where no one is left behind.</p>
+        <div class="footer-social">
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>Quick Links</h5>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="campaigns.html">Campaigns</a></li>
+          <li><a href="donate.html">Donate</a></li>
+          <li><a href="history.html">History</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Campaigns</h5>
+        <ul>
+          <li><a href="campaigns.html">Education Fund</a></li>
+          <li><a href="campaigns.html">Medical Emergency</a></li>
+          <li><a href="campaigns.html">Flood Relief</a></li>
+          <li><a href="campaigns.html">Winter Aid</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Newsletter</h5>
+        <p style="font-size:14px; color:#94a3b8;">Subscribe to receive updates about our impact.</p>
+        <form class="newsletter">
+          <input type="email" placeholder="Your email" required />
+          <button type="submit"><i class="fa-solid fa-paper-plane"></i></button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2026 <span>HopeFund</span>. All rights reserved. Built with ❤ for humanity.
+    </div>
+  </div>
+</footer>
+
+<!-- ============ SCROLL TO TOP ============ -->
+<button id="toTop" aria-label="Scroll to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+<!-- ============ TOAST ============ -->
+<div class="toast" id="toast"><i class="fa-solid fa-circle-check"></i><span id="toastMsg">Done!</span></div>
+
+<script src="storage.js"></script>
+<script src="app.js"></script>
+<script src="contact.js"></script>
+</body>
+</html>
